@@ -13,6 +13,14 @@ public class App {
         String seek = in.nextLine();
         int seek_index = word.indexOf(seek);
         System.out.println("Bokstaven ligger på plats "+(seek_index+1));
+
+        System.out.println("Var är första stället du vill dela på texten?");
+        int divorced_dad = in.nextInt();
+        System.out.println("Var är andra stället du vill dela på texten?");
+        int divorced_mom = in.nextInt();
+
+        String sub_string = word.substring(divorced_dad, divorced_mom);
+        System.out.println("Texten mellan "+divorced_dad+" och "+divorced_mom+" är "+sub_string);
         
         
     }

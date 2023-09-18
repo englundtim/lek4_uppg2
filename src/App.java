@@ -27,6 +27,13 @@ public class App {
         String boo = in.nextLine();
         boolean lean = word.contains(boo);
         System.out.println("Innehåller texten "+boo+":   "+lean);
+
+        System.out.println("Vad vill du byta ut i ditt ord?");
+        String single_dad = in.nextLine();
+        System.out.println("Vad vill du byta ut det mot?");
+        String step_father = in.nextLine();
+        String new_word = word.replace(single_dad, step_father);
+        System.out.println("Ditt nya ord är: "+new_word);
         
         
     }

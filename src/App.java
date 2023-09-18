@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner in = new Scanner(System.in);
-        System.out.println("Mata in en text på ett valfritt antal ord");
+        System.out.println("Mata in en text på ett valfritt antal bokstäver");
         String word = in.nextLine();
 
         int letters = word.length();
@@ -21,6 +21,12 @@ public class App {
 
         String sub_string = word.substring(divorced_dad, divorced_mom);
         System.out.println("Texten mellan "+divorced_dad+" och "+divorced_mom+" är "+sub_string);
+
+        System.out.println("Vilket ord ska programmet leta efter?");
+            in.nextLine();
+        String boo = in.nextLine();
+        boolean lean = word.contains(boo);
+        System.out.println("Innehåller texten "+boo+":   "+lean);
         
         
     }
